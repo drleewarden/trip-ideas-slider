@@ -36,7 +36,7 @@
     },
         infoWindow = function(){
 
-            //$('.info_window').hide();
+            $('.info_window').hide();
            // $('.img-title').hide();
 
         }
