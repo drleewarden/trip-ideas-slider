@@ -2,11 +2,18 @@
 (function($) {
     // init
     $(function () {
+        // var
+        var that = this,
+            pathname = window.location.pathname;
+
         infoWindow();
         sliderPlugin();
+        changeImg();
 
     });
-
+    changeImg = function(){
+       alert(that.pathname);
+    },
     sliderPlugin = function() {
 
         // Using custom configuration
@@ -14,7 +21,7 @@
 
             scroll : {
                 items: 1,
-                duration: 1500,
+                duration: 9500,
                 easing: 'swing'
             },
             prev: {
@@ -36,7 +43,7 @@
     },
         infoWindow = function(){
 
-            $('.info_window').hide();
+           // $('.info_window').hide();
            // $('.img-title').hide();
 
         }

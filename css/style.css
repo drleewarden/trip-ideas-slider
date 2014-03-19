@@ -31,12 +31,18 @@ li{
     top: 0;
     height: 106px;
     margin-bottom: 6px;
-    margin-left: 0px;
+    margin-left: 60px;
     margin-right: 0px;
-    margin-top: 2px;
+    margin-top: -500px;
     text-shadow: rgb(0, 0, 0) 0px 0px 30px;
     width: 335px;
     zoom: 1;
+
+}
+.img-title h2{
+    color: white;
+    text-shadow: 0px 0px 30px #000;
+    font-size: 45px;
 }
 
 .image-slider-item {
@@ -92,4 +98,20 @@ li{
     text-align: center;
     font-size: 14px;
     border-radius: 3px;
+}
+.info_window {
+    margin: 260px 500px;
+    padding: 0px;
+    z-index: 9;
+    position: absolute;
+    background: rgba(39, 39, 39, 0.8) url(../img/black-transparent-bg.png) repeat;
+}
+p {
+    margin: 0;
+    color: #ccc;
+    padding: 20px 20px 0px 20px;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 300;
+    max-width: 463px;
 }
