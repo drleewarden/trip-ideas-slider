@@ -8,11 +8,26 @@
 
         infoWindow();
         sliderPlugin();
-        changeImg();
+        changeImg(pathname);
 
     });
-    changeImg = function(){
-       alert(that.pathname);
+    changeImg = function(pathname){// if url matches
+        var xUrl = pathname.split( '/'),
+            url = xUrl[xUrl.length-1],
+            index = '1.jpeg',
+            tripB = '2.jpeg',
+            tripc = '3.jpeg';
+        console.log(url);
+        switch(url){
+            case 'golf.html':
+                var imgUrl = index;
+                return
+            default:
+                var imgUrl = index;
+
+
+        }
+        $('.list-carousel').html('<img src="images'+imgUrl+'"/>');// swap image
     },
     sliderPlugin = function() {
 
