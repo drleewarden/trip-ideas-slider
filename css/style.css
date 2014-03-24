@@ -21,6 +21,15 @@ li{
 .image-slider{
     margin: 0 0px;
 }
+.image-slider-item .inner img {
+    z-index: 0 !important;
+    position: relative;
+
+}
+.image-slider-item img.hero {
+    z-index: 1 !important;
+    box-shadow: black 8px 80px 121px 10px;
+}
 
 a#info_button {
     position: absolute;
@@ -28,6 +37,10 @@ a#info_button {
     background: url(http://www.hellobc.com/App_Themes/HelloBC/Images/icon_info.png) no-repeat;
     width: 34px;
     height: 34px;
+    z-index: 2;
+}
+.singleImg{
+    float: none !important;
 }
 .img-title{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -45,6 +58,8 @@ a#info_button {
     text-shadow: rgb(0, 0, 0) 0px 0px 30px;
     width: 335px;
     zoom: 1;
+    position: relative;
+    z-index: 2;
 
 }
 .img-title h2{
